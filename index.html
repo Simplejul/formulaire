@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulaire d'inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <form action="urlDeReceptionDesDonnees" method="GETouPOST">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="userName" required>
+        </div>
+        <div>
+        <label for="lastname">Last Name: </label>
+        <input type="text" id="lastname" name="lastName" required>
+        </div>
+        <div>
+            <label for="sex">Sex: </label>
+            <input type="radio" id="sex1" name="sex" required> 
+            <label for="sex1">Je l ai oublié à la maison.</label> 
+            <input type="radio" id="sex2" name="sex" required> 
+            <label for="sex2">Il est tombé hier soir.</label> 
+            <input type="radio" id="sex3" name="sex" required> 
+            <label for="sex3">Il pousse à l'envers!</label> 
+            <input type="radio" id="sex4" name="sex" required> 
+            <label for="sex4">Toujours à sa place, tout va bien!</label> 
+        </div>
+        <div>
+            <label for="login">Login: </label>
+            <input type="text" id="login" name="login" required>
+        </div>
+        <div>
+            <label for="tel">Telephone: </label>
+            <input type="tel" id="tel" name="tel" required>
+        </div>
+        <div>
+            <label for="email">E-Mail: </label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="pwd" name="password" required>
+        </div>
+        <div>
+            <label for="birth">Birthday: </label>
+            <input type="date" id="birth" name="birth" required>
+        </div>
+        <div>
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div>
+            <label for="website">Your web site: </label>
+            <input type="url" id="website" name="website" required>
+        </div>
+        <div>
+            <label for="hobby">Hobbys: </label>
+            <textarea id="hobby" name="hobby" required></textarea>
+        </div>
+        <div>
+            <label for="color">Favorite color: </label>
+            <input type="color" id="color" name="color" required>
+        </div>
+        <div>
+            <progress max="100" value="10"></progress>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+<!--
+    nom,
+     prénom, 
+     login (ne doit pas déjà être utilisé), 
+     sexe (bouton radio), 
+     mot de passe (au moins huit caractères dont au moins une majuscule, un caractère spécial et un chiffre), 
+     date de naissance, 
+     ville, 
+     mail (valide), 
+     url de son site (valide), 
+     ses hobbys (max 200 caractères), 
+     son numéro de téléphone (XX.XX.XX.XX.XX) 
+     ainsi que sa couleur préférée
+-->
