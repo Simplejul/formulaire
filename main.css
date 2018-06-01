@@ -1,6 +1,9 @@
+label{
+
+}
 input{
 
 }
 input:invalid{
-
+    border: 1px dashed red;
 }
